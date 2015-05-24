@@ -7,22 +7,26 @@ public class Task6W1 {
 		 * AM / PM
 		 */
 
-		int hours = 2;            // Variables input hours and minutes
+		int hours = 8;         // Variables input hours and minutes
 		int minutes = 57;
 
-		int hours1;             // The variable assist in turning 24 hours of the AM/PM
+		int hours1;            // The variable assist in turning 24 hours of the AM/PM
 
-		// The conditions that turn the clock from 24 hours to AM/PM and printing
+		// The conditions that turn the clock from 24 hours to AM/PM and
+		// printing
 
 		if (hours <= 12) {
-			System.out.printf(" Time is: %dh : %dm AM", hours, minutes);
+			System.out.printf(" Time is: %d hours and %d minutes AM", hours,
+					minutes);
 		} else {
 			if (hours == 24) {
-				System.out.printf("Time is 00 : %dm AM", minutes);
+				System.out
+						.printf("Time is 00 hours and %d minutes AM", minutes);
 			} else {
 				hours1 = hours / 12;
-				System.out.printf(" Time is: %dh : %dm PM or %dh : %dm ",
-						hours1, minutes, hours, minutes);
+				System.out
+						.printf(" Time is: %d hours and %d minutes PM or %d hours and %d minutes ",
+								hours1, minutes, hours, minutes);
 			}
 		}
 	}

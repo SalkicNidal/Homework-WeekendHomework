@@ -6,11 +6,11 @@ public class Task3W1 {
 		 * dates . Print to console the date of the two dates comes before the
 		 * other.
 		 */
-		int day1 = 2;
-		int month1 = 1;
+		int day1 = 16;
+		int month1 = 11;
 		int year1 = 2018; // The six variables that represent two date
-		int day2 =   2; // format of date is day - month -year
-		int month2 = 1;
+		int day2 =   9; // format of date is day - month -year
+		int month2 = 11;
 		int year2 = 2018;
 
 		// The conditions that determine which of the two dates comes first and

@@ -9,9 +9,12 @@ public class Task8W1 {
 		int x = 0;
 		int y = -1; // Coordinates point A
 		int z = 1;
+		
 		// Command to determine the distance
+		
 		double distance;
 		distance = Math.sqrt((double) (x * x + y * y + z * z));
+           
 		// Print to console the distance from origin point
 		System.out
 				.printf("Distance A point (%d,%d,%d) from the origin point(0,0,0) is: %f",

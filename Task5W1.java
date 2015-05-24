@@ -6,22 +6,21 @@ public class Task5W1 {
 		 * variables have been sorted from least to greatest .
 		 */
 
-		int a = 9;
-		int b = 4;  // The variables that need to be sorted
-		int c = 6;
-		int d = 2;
+		int a = 4;
+		int b = 410;             // The numbers that need to be sorted
+		int c = 4;
+		int d = 410;
 
 		int min;
 		int min1;
 		int min2;
-		int max;    // Variables that are used to sort of  lowest to higher
+		int max;             // Variables that are used like assist for sort of  lowest to higher
 		int max1;
 		int max2;
-		int m1;
-		int m2;
+		int med1;
+		int med2;
 
-		// Conditions to be satisfied for sorting numbers
-		// Method split into two sets
+		 // The algorithm and the conditions by which we sort the numbers. Method split into two sets
 		
 		if (a < b) {
 			min1 = a;
@@ -30,6 +29,7 @@ public class Task5W1 {
 			min1 = b;
 			max1 = a;
 		}
+		
 		if (c < d) {
 			min2 = c;
 			max2 = d;
@@ -37,30 +37,33 @@ public class Task5W1 {
 			min2 = d;
 			max2 = c;
 		}
+		
 		if (min1 < min2) {
 			min = min1;
-			m1 = min2;      
-		} else {             // Minimal and second number of main 
+			med1 = min2;      
+		} else {             // Minimal and medium1 number 
 			min = min2;
-			m1 = min1;
+			med1 = min1;
 		}
+		
 		if (max1 > max2) {
 			max = max1;
-			m2 = max2;
-		} else {             // Max and third number of main
+			med2 = max2;
+		} else {             // Max and medium2 number
 			max = max2;
-			m2 = max1;
+			med2 = max1;
 		}
+		
 		   // The condition for finding the second and third number and printing numbers
 		
-		if (m1 < m2) {
+		if (med1 < med2) {
 			System.out.printf(
-					"Sorted numbers from lowest to higher is: %d<%d<%d<%d", min,
-					m1, m2, max);
+					"Numbers %d-%d-%d-%d is sorted from lowest to higher: %d<%d<%d<%d",a,b,c,d, min,
+					med1, med2, max);
 		} else {
 			System.out.printf(
-					"Sorted numbers from lowest to higher is: %d<%d<%d<%d", min,
-					m2, m1, max);
+					"Numbers %d-%d-%d-%d is sorted from lowest to higher: %d<%d<%d<%d",a,b,c,d, min,
+					med2, med1, max);
 		}
 
 	}
