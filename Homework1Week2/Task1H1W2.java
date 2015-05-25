@@ -10,16 +10,30 @@ public class Task1H1W2 {
 		int Num = 33;
 		int counter = 1; // Variable of entered number, counter and the sum
 		int sum = 0;
-		// Algorithm with a while loop and if branching
+/*		// Algorithm with a while loop and if branching
 		while (counter <= Num) {
 			if (Num % counter == 0) {
+				Num /= counter;
 				sum++;
 			}
 			counter++;
 		}
 		// Printing the result
-		System.out.printf("Number %d can divide before it comes zero %d times",Num,sum);
+		System.out.printf("Number can divide before it comes zero %d times",
+			 sum);
+	}
+	
+}*/
+		while (counter <= Num) {
+			if (Num % counter == 0) {
 
+				sum++;
+			}
+			counter++;
+			// Printing the result
+		}
+		System.out.printf("Number %d can divide before it comes zero %d times",
+				Num, sum);
 	}
 
 }
