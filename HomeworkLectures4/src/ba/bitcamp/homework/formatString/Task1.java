@@ -46,10 +46,16 @@ public class Task1 {
 
 	public static void main(String[] args) {
 
-		formatString("My %d format", "Nidal");
-		formatStringManipulation("My %d format", 5342);
+		double start = System.currentTimeMillis()/60;
 		
-		System.out.printf("%d, %d", 5);
+		formatString("My %d format", "Nidal");
+		formatStringManipulation("My %.3d format", 5342);
+		
+		double end = System.currentTimeMillis();
+		
+		System.out.println(end - start);
+		
+		System.out.printf("%b, %d", 5 , 4);
 		
 		
 		
